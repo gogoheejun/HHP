@@ -35,6 +35,13 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 
+	// Swagger
+	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0")
+	implementation("org.projectlombok:lombok:1.18.22")
+	// lombok
+	compileOnly("org.projectlombok:lombok") // IDE 인식용 + 컴파일 시 클래스 경로 제공
+	annotationProcessor("org.projectlombok:lombok") // 컴파일 시 코드 생성
+
     // DB
 	runtimeOnly("com.mysql:mysql-connector-j")
 
